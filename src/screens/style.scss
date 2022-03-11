@@ -1,0 +1,45 @@
+.navigation {
+    display: block;
+    background-color: hsl(235, 46%, 20%);
+    height: auto;
+    border-radius: 10px;
+
+    @media only screen and (min-width: 346px) and (max-width: 1440px){
+        height: 100%
+    }
+}
+
+.top {
+    padding:20px;
+    border-radius: 10px;
+    width: 160px;
+    height: auto;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    background-color: hsl(246, 80%, 60%);
+    
+    @media only screen and (min-width: 346px) and (max-width: 1440px){
+
+    }
+}
+
+.image {
+    width:40%;
+    height:50%;
+}
+
+.text-container {
+    width: 50%;
+    text-align: left;
+}
+.small-text {
+    font-size: 12px;
+    color: hsl(236, 100%, 87%);
+    opacity: 0.8;
+}
+
+.bottom {
+    width: 160px;
+    height: auto;
+    padding:20px;
+    
+}
