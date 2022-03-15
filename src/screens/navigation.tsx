@@ -29,7 +29,7 @@ function Navigation () {
 
     return (
         <div className='navigation'>
-            <div className='top'>
+            <div className='nav-top'>
                 <img src ={image} alt="profile-photo" className='image'/>
                 <div className='text-container'>
                     <span className='small-text'>
@@ -38,20 +38,14 @@ function Navigation () {
                     <h2 style ={{margin:"0 auto", opacity:1, color: "hsl(236, 100%, 87%)", fontWeight:300}}>Jeremy Robson</h2>
                 </div>
             </div>
-            <div className='bottom'>
-                <ul style ={{margin:0, padding:'12px'}}>
-                    {navBar.map((item, index) => {
-                        return (
-                            <li key = {index} className={item.class}>
-                                <Link to={item.path} style ={{textDecoration:'none'}} >
-                                    {item.title}
-                                </Link>
-                            </li>
-                        )
-                    })}
-                </ul>
+            
+                <div className='nav-text'>
+                    <Link to="/" style ={{textDecoration:'none'}}>Daily</Link><br/><br/>
+                    <Link to="/weekly" style ={{textDecoration:'none'}} >Weekly</Link><br/> <br/>
+                    <Link to="/monthly" style ={{textDecoration:'none'}} >Monthly</Link><br/>
+                </div>
             </div>
-        </div>
+    
     );
 }
 

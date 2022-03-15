@@ -53,48 +53,103 @@ function Daily () {
         <div className='App'>
             <Navigation/>
             <div className='card-container'>
-                <div className='first-row'>
+                <div className='first-row' >
                     <div className='work'>
                         <img className ="icon" src={work} alt="work"/>
                         <div className='card'>
-                            {data.work.title}
+                            <span className='title'>
+                                {data.work.title}
+                                <img className="ellipsis" src={ellipsis} alt="ellipsis"/>
+                            </span>
+                            <div style={{marginTop: 15}} >
+                                <h1 style ={{margin:"0 auto", color: "white", fontWeight:300}}>{data.work.current}hrs</h1>
+                                <span className='small-text'>
+                                    Last Week - {data.work.previous}hrs
+                                </span>
+                            </div>
+                            
                         </div>
                     </div>
                     
                     <div className='play'>
                         <img className ="icon"  src={play} alt="play"/>
                         <div className='card'>
-                        
+                            <span className='title'>
+                                {data.play.title}
+                                <img className="ellipsis" src={ellipsis} alt="ellipsis"/>
+                            </span>
+                            <div style={{marginTop: 15}} >
+                                <h1 style ={{margin:"0 auto", color: "white", fontWeight:300}}>{data.play.current}hrs</h1>
+                                <span className='small-text'>
+                                    Last Week - {data.play.previous}hrs
+                                </span>
+                            </div>
                         </div>
                     </div>
                     
                     <div className='study'>
                         <img className ="icon" src={study} alt="study"/>
                         <div className='card'>
-                        
+                            <span className='title'>
+                                {data.study.title}
+                                <img className="ellipsis" src={ellipsis} alt="ellipsis"/>
+                            </span>
+                            <div style={{marginTop: 15}} >
+                                <h1 style ={{margin:"0 auto", color: "white", fontWeight:300}}>{data.study.current}hrs</h1>
+                                <span className='small-text'>
+                                    Last Week - {data.study.previous}hrs
+                                </span>
+                            </div>
                         </div>
                     </div>
                     
                 </div>
-                <div className='second-row'>
+                <div className='second-row' >
                    <div className='exercise'>
                        <img className='icon' src={exercise} alt="exercise"/>
                        <div className='card'>
-
+                       <span className='title'>
+                                {data.exercise.title}
+                                <img className="ellipsis" src={ellipsis} alt="ellipsis"/>
+                            </span>
+                            <div style={{marginTop: 15}} >
+                                <h1 style ={{margin:"0 auto", color: "white", fontWeight:300}}>{data.exercise.current}hrs</h1>
+                                <span className='small-text'>
+                                    Last Week - {data.exercise.previous}hrs
+                                </span>
+                            </div>
                        </div>
                    </div>
 
                     <div className='social'>
                         <img className ="icon"  src={social} alt="social"/>
                         <div className='card'>
-                        
+                            <span className='title'>
+                                {data.social.title}
+                                <img className="ellipsis" src={ellipsis} alt="ellipsis"/>
+                            </span>
+                            <div style={{marginTop: 15}} >
+                                <h1 style ={{margin:"0 auto", color: "white", fontWeight:300}}>{data.social.current}hrs</h1>
+                                <span className='small-text'>
+                                    Last Week - {data.social.previous}hrs
+                                </span>
+                            </div>
                         </div>
                     </div>
 
                     <div className='self-care'>
                         <img className ="icon" src={selfCare} alt="play"/>
                         <div className='card'>
-                        
+                            <span className='title'>
+                                {data.selfcare.title}
+                                <img className="ellipsis" src={ellipsis} alt="ellipsis"/>
+                            </span>
+                            <div style={{marginTop: 15}} >
+                                <h1 style ={{margin:"0 auto", color: "white", fontWeight:300}}>{data.selfcare.current}hrs</h1>
+                                <span className='small-text'>
+                                    Last Week - {data.selfcare.previous}hrs
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
